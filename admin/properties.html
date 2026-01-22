@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Properties | BHHL Admin</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Demo Banner -->
+  <div class="demo-banner">
+    <strong>🎨 Design Mockup</strong> — This is a concept showing what your admin dashboard could look like.
+    <a href="../options.html">View Full Proposal →</a>
+  </div>
+
+  <div class="admin-layout">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="sidebar__header">
+        <a href="index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">BH</span>
+          BHHL Admin
+        </a>
+      </div>
+
+      <nav class="sidebar__nav">
+        <div class="nav-section">
+          <div class="nav-section__title">Overview</div>
+          <a href="index.html" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+            Dashboard
+          </a>
+          <a href="properties.html" class="nav-link nav-link--active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+              <polyline points="9 22 9 12 15 12 15 22"/>
+            </svg>
+            Properties
+            <span class="nav-link__badge">16</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <div class="nav-section__title">Bookings</div>
+          <a href="calendar.html" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Calendar
+          </a>
+          <a href="bookings.html" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+            Bookings
+            <span class="nav-link__badge">3</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+            Guests
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <div class="nav-section__title">Settings</div>
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+            Settings
+          </a>
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"/>
+              <line x1="7" y1="2" x2="7" y2="22"/>
+              <line x1="17" y1="2" x2="17" y2="22"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+            </svg>
+            Pricing
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__user">
+          <div class="sidebar__avatar">LS</div>
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-name">Lewis Scott</div>
+            <div class="sidebar__user-role">Owner</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-header">
+        <h1 class="page-title">Properties</h1>
+        <div class="header-actions">
+          <div class="search-box">
+            <svg class="search-box__icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+            <input type="text" class="search-box__input" placeholder="Search properties...">
+          </div>
+          <button class="btn btn--primary">+ Add Property</button>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <div class="properties-grid" style="grid-template-columns: repeat(4, 1fr);">
+
+          <!-- Property 1: Symonds Yat Lodge -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/443c173461fc7a3c9e5d657476f9e7147e2d6486/Symonds_Yat_Lodge_Edited_Version_for_Staytech.original.png?w=400&h=300&fit=crop" alt="Symonds Yat Lodge">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Symonds Yat Lodge</h3>
+              <p class="property-card__location">Wye Valley</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  50
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  22
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£4,250/nt</span>
+              <span class="property-card__bookings">8 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 2: Forest House -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/34db15b96263c2de781554b07963362d4b1e23b6/P_DVD_Forest_House__Gavin._GARDEN-5337.original.jpg?w=400&h=300&fit=crop" alt="Forest House">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Forest House</h3>
+              <p class="property-card__location">Forest of Dean</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  25
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  11
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£2,750/nt</span>
+              <span class="property-card__bookings">5 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 3: Bowley Hall -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/09b1a61b4260bfa662d79ef36049635d478bb35d/Back_of_house.original.jpg?w=400&h=300&fit=crop" alt="Bowley Hall">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Bowley Hall</h3>
+              <p class="property-card__location">Herefordshire</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  31
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  14
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£3,200/nt</span>
+              <span class="property-card__bookings">6 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 4: High Cloud Farm -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/0b4e621beb9681ac01238fb535db92ef59dbba11/HC_Scrumpy_Home_%282%29.original.jpg?w=400&h=300&fit=crop" alt="High Cloud Farm">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">High Cloud Farm</h3>
+              <p class="property-card__location">Monmouthshire</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  24
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  10
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£2,950/nt</span>
+              <span class="property-card__bookings">7 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 5: Pencraig Court -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/d5e7f39f033bd6047160f177c574ab3bffab52ac/007web.original.jpg?w=400&h=300&fit=crop" alt="Pencraig Court">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Pencraig Court</h3>
+              <p class="property-card__location">Ross-on-Wye</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  36
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  16
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£3,500/nt</span>
+              <span class="property-card__bookings">4 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 6: River Wye Lodge -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/2b0842d95d5866333204d9bc5cbb05a4d5300e38/Drone_shot_of_RWL_and_River_1.original.jpg?w=400&h=300&fit=crop" alt="River Wye Lodge">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">River Wye Lodge</h3>
+              <p class="property-card__location">Wye Valley</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  20
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  8
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£2,400/nt</span>
+              <span class="property-card__bookings">5 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 7: The Manor on the Monnow -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/29319517874272af3f6424ac75fb450001fef68e/Manor_House-1.3.original.jpg?w=400&h=300&fit=crop" alt="The Manor on the Monnow">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">The Manor on the Monnow</h3>
+              <p class="property-card__location">Monmouth</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  28
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  12
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£2,850/nt</span>
+              <span class="property-card__bookings">4 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 8: Bromsash House -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/f2a1d37de60215a927b2a51743cb41ba6905318f/DJI_0203-EDIT.original.jpg?w=400&h=300&fit=crop" alt="Bromsash House">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Bromsash House</h3>
+              <p class="property-card__location">Ross-on-Wye</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  18
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  8
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£2,150/nt</span>
+              <span class="property-card__bookings">3 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 9: Fairlea Grange -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/c303b6012a97a0694651f33c63977192a2be7ead/Fairlea_IOutside_2.original.jpg?w=400&h=300&fit=crop" alt="Fairlea Grange">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Fairlea Grange</h3>
+              <p class="property-card__location">Gloucestershire</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  22
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  10
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£2,600/nt</span>
+              <span class="property-card__bookings">5 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 10: Wye Rapids House -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/28ba96e18aa560603886538dec8190b7f6da1f88/Wye_Rapids.original.png?w=400&h=300&fit=crop" alt="Wye Rapids House">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Wye Rapids House</h3>
+              <p class="property-card__location">Symonds Yat</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  16
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  7
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£1,950/nt</span>
+              <span class="property-card__bookings">6 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 11: The Anchor -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/a87bd22922695fc9c5d2e1153015b79c6c25a6fd/The_Anchor-62.original.jpg?w=400&h=300&fit=crop" alt="The Anchor">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">The Anchor</h3>
+              <p class="property-card__location">Tintern</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  14
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  6
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£1,800/nt</span>
+              <span class="property-card__bookings">4 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 12: Holly Tree House -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/1e48572672346cda34bb4a76c488f43f04455eb3/open-uri20221201-25-q3gv63.original?w=400&h=300&fit=crop" alt="Holly Tree House">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Holly Tree House</h3>
+              <p class="property-card__location">Coleford</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  12
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  5
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£1,450/nt</span>
+              <span class="property-card__bookings">3 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 13: Brookside -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/933c7edc002cce3c62c5d671c07220bf39b2bd08/Front_view_Main_Picture.original.JPEG?w=400&h=300&fit=crop" alt="Brookside">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Brookside</h3>
+              <p class="property-card__location">Lydney</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  10
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  4
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£1,200/nt</span>
+              <span class="property-card__bookings">2 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 14: Monnow Valley Studio -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/4323a8ab54370493bebdd02ee8e340311fe7b382/Hero.original.jpg?w=400&h=300&fit=crop" alt="Monnow Valley Studio">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Monnow Valley Studio</h3>
+              <p class="property-card__location">Skenfrith</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  8
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  3
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£950/nt</span>
+              <span class="property-card__bookings">2 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 15: Carefree Cottage -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/2f341aabf2bf546bd319b57d83726b26a24cada0/IMG_8092.original.JPG?w=400&h=300&fit=crop" alt="Carefree Cottage">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Carefree Cottage</h3>
+              <p class="property-card__location">Forest of Dean</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  6
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  3
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£650/nt</span>
+              <span class="property-card__bookings">4 booked</span>
+            </div>
+          </div>
+
+          <!-- Property 16: Hope Mansell Hall -->
+          <div class="property-card">
+            <div class="property-card__image">
+              <img src="https://scrumpy.imgix.net/assets/33ed5fa8b00cfc189758092d9b1888333e763b2a/472375397_122199250646232074_1924879729824335726_n.original.jpg?w=400&h=300&fit=crop" alt="Hope Mansell Hall">
+              <span class="property-card__status property-card__status--live">Live</span>
+            </div>
+            <div class="property-card__content">
+              <h3 class="property-card__name">Hope Mansell Hall</h3>
+              <p class="property-card__location">Ross-on-Wye</p>
+              <div class="property-card__stats">
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                  20
+                </span>
+                <span class="property-card__stat">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                  9
+                </span>
+              </div>
+            </div>
+            <div class="property-card__footer">
+              <span class="property-card__price">£2,400/nt</span>
+              <span class="property-card__bookings">3 booked</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

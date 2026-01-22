@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Enquire | Hope Mansell Hall - Check Availability</title>
+  <meta name="description" content="Contact Hope Mansell Hall to check availability for your group stay. Fill in our enquiry form for groups of up to 40.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <script src="https://www.prometheus-it.com/analytics.js" data-id="hope-mansell-hall"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Concept Banner -->
+  <a href="options.html" class="concept-banner">
+    <div class="concept-banner__content">
+      <span class="concept-banner__label">Website Concept for Hope Mansell Hall</span>
+      <span class="concept-banner__cta">See Quote & Options &rarr;</span>
+    </div>
+  </a>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__container">
+      <a href="index.html" class="header__logo">
+        <span class="header__logo-text">Hope Mansell Hall</span>
+      </a>
+
+      <nav class="nav">
+        <button class="nav__toggle" aria-label="Open menu">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 12h18M3 6h18M3 18h18"/>
+          </svg>
+        </button>
+
+        <div class="nav__menu">
+          <button class="nav__close" aria-label="Close menu">&times;</button>
+          <ul class="nav__list">
+            <li><a href="index.html" class="nav__link">Home</a></li>
+            <li><a href="the-house.html" class="nav__link">The Hall</a></li>
+            <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+            <li><a href="location.html" class="nav__link">Herefordshire</a></li>
+            <li><a href="contact.html" class="nav__link nav__link--active">Enquire</a></li>
+          </ul>
+          <a href="book.html" class="nav__cta">Book Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Hero -->
+    <section class="page-hero" style="min-height: 35vh;">
+      <img src="assets/hero/front-lawn.jpg" alt="Hope Mansell Hall" class="page-hero__image">
+      <div class="page-hero__overlay"></div>
+      <div class="page-hero__content">
+        <h1 class="page-hero__title">Make an Enquiry</h1>
+        <p class="page-hero__subtitle">Let's plan your group getaway</p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+      <div class="container">
+        <div class="contact-grid">
+          <!-- Contact Info -->
+          <div class="contact-info">
+            <span class="section-eyebrow">Get in Touch</span>
+            <h2 class="section-title">We'd Love to Hear From You</h2>
+            <p style="color: var(--color-text-muted); margin-bottom: 32px; line-height: 1.8;">Whether you have questions about Hope Mansell Hall, want to check availability, or are ready to book, we're here to help. Fill in the form and we'll get back to you quickly.</p>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="M22 7l-10 7L2 7"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Email</div>
+                <div class="contact-info__value"><a href="mailto:info@hopemansellhall.co.uk">info@hopemansellhall.co.uk</a></div>
+              </div>
+            </div>
+
+            <div class="contact-info__item">
+              <div class="contact-info__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div>
+                <div class="contact-info__label">Address</div>
+                <div class="contact-info__value">Hope Mansell<br>Ross-on-Wye, Herefordshire</div>
+              </div>
+            </div>
+
+            <!-- Quick Info -->
+            <div style="background: var(--color-off-white); padding: 24px; border-radius: 8px; margin-top: 32px;">
+              <h4 style="font-family: var(--font-display); font-size: 1.1rem; margin-bottom: 16px;">Quick Info</h4>
+              <ul style="color: var(--color-text-muted); line-height: 2;">
+                <li><strong>Sleeps:</strong> Up to 40 guests</li>
+                <li><strong>Bedrooms:</strong> 18 (all ensuite)</li>
+                <li><strong>Check-in:</strong> 4:00pm</li>
+                <li><strong>Check-out:</strong> 10:00am</li>
+                <li><strong>From:</strong> &pound;4,250 per week</li>
+                <li><strong>Pets:</strong> 2 dogs welcome</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Form -->
+          <div class="contact-form">
+            <h3 style="font-family: var(--font-display); font-size: 1.5rem; margin-bottom: 24px;">Check Availability</h3>
+
+            <form action="#" method="POST" id="enquiryForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="firstName">First Name *</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                  <label for="lastName">Last Name *</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="email">Email *</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="arrivalDate">Arrival Date *</label>
+                  <input type="date" id="arrivalDate" name="arrivalDate" required>
+                </div>
+                <div class="form-group">
+                  <label for="departureDate">Departure Date *</label>
+                  <input type="date" id="departureDate" name="departureDate" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="guests">Number of Guests *</label>
+                  <select id="guests" name="guests" required>
+                    <option value="">Select...</option>
+                    <option value="1-15">1-15 guests</option>
+                    <option value="16-25">16-25 guests</option>
+                    <option value="26-35">26-35 guests</option>
+                    <option value="36-40">36-40 guests</option>
+                  </select>
+                </div>
+                <div class="form-group">
+                  <label for="occasion">Occasion</label>
+                  <select id="occasion" name="occasion">
+                    <option value="">Select (optional)...</option>
+                    <option value="family-reunion">Family Reunion</option>
+                    <option value="birthday">Birthday Celebration</option>
+                    <option value="anniversary">Anniversary</option>
+                    <option value="hen-party">Hen Party</option>
+                    <option value="stag-party">Stag Party</option>
+                    <option value="christmas">Christmas / New Year</option>
+                    <option value="friends-getaway">Friends Getaway</option>
+                    <option value="wedding">Wedding Celebration</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Tell us about your group and any special requirements..."></textarea>
+              </div>
+
+              <div class="form-group" style="margin-top: 8px;">
+                <label style="display: flex; align-items: flex-start; gap: 12px; cursor: pointer;">
+                  <input type="checkbox" name="pets" style="width: auto; margin-top: 4px;">
+                  <span style="font-weight: normal; font-size: 0.9rem; color: var(--color-text-muted);">We'll be bringing dogs (up to 2 welcome)</span>
+                </label>
+              </div>
+
+              <button type="submit" class="btn btn--primary form-submit">
+                Send Enquiry
+              </button>
+
+              <p style="font-size: 0.85rem; color: var(--color-text-muted); margin-top: 16px; text-align: center;">We typically respond within 24 hours</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQs -->
+    <section class="section section--warm">
+      <div class="container">
+        <div class="text-center mb-48">
+          <span class="section-eyebrow">Common Questions</span>
+          <h2 class="section-title">Frequently Asked</h2>
+        </div>
+
+        <div style="max-width: 800px; margin: 0 auto;">
+          <div style="background: white; padding: 24px 28px; border-radius: 8px; margin-bottom: 16px;">
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px;">What's the minimum stay?</h4>
+            <p style="color: var(--color-text-muted); line-height: 1.7;">Minimum stay is typically 2-3 nights. For peak periods (Christmas, New Year, Bank Holidays) longer minimum stays may apply.</p>
+          </div>
+
+          <div style="background: white; padding: 24px 28px; border-radius: 8px; margin-bottom: 16px;">
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px;">How do I book?</h4>
+            <p style="color: var(--color-text-muted); line-height: 1.7;">All bookings start with an enquiry. We'll check availability, confirm pricing, and then take a deposit to secure your dates. Balance is due 8 weeks before arrival.</p>
+          </div>
+
+          <div style="background: white; padding: 24px 28px; border-radius: 8px; margin-bottom: 16px;">
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px;">Can we bring pets?</h4>
+            <p style="color: var(--color-text-muted); line-height: 1.7;">Yes! We welcome up to 2 well-behaved dogs. Please let us know when booking.</p>
+          </div>
+
+          <div style="background: white; padding: 24px 28px; border-radius: 8px; margin-bottom: 16px;">
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px;">Is Hope Mansell Hall suitable for hen parties?</h4>
+            <p style="color: var(--color-text-muted); line-height: 1.7;">Hen parties are welcome. With the private bar, games room, and space for 40, it's perfect for celebrations. Please let us know if you're booking for a hen/stag when you enquire.</p>
+          </div>
+
+          <div style="background: white; padding: 24px 28px; border-radius: 8px; margin-bottom: 16px;">
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px;">Can we arrange catering?</h4>
+            <p style="color: var(--color-text-muted); line-height: 1.7;">Yes, professional catering can be arranged so you don't have to cook at all. We can also arrange wellness treatments and other extras.</p>
+          </div>
+
+          <div style="background: white; padding: 24px 28px; border-radius: 8px;">
+            <h4 style="font-family: var(--font-display); font-size: 1.2rem; margin-bottom: 12px;">What's the parking situation?</h4>
+            <p style="color: var(--color-text-muted); line-height: 1.7;">We have off-road parking for 20 vehicles. More than enough for even the largest groups.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section section--dark">
+      <div class="container">
+        <h2 class="cta-section__title">Prefer to Email Directly?</h2>
+        <p class="cta-section__text">We're happy to answer any questions and help you plan your stay.</p>
+        <div class="cta-section__actions">
+          <a href="mailto:info@hopemansellhall.co.uk" class="btn btn--primary btn--large">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="4" width="20" height="16" rx="2"/>
+              <path d="M22 7l-10 7L2 7"/>
+            </svg>
+            info@hopemansellhall.co.uk
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <span class="footer__logo-text">Hope Mansell Hall</span>
+          <p>A Georgian manor house offering luxury group accommodation in Herefordshire, with 11 acres of grounds and your own private lake.</p>
+        </div>
+
+        <div class="footer__links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="the-house.html">The Hall</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="location.html">Herefordshire</a></li>
+            <li><a href="contact.html">Enquire</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h4>Contact</h4>
+          <p><a href="mailto:info@hopemansellhall.co.uk">info@hopemansellhall.co.uk</a></p>
+          <p>Hope Mansell<br>Ross-on-Wye, Herefordshire</p>
+        </div>
+
+        <div class="footer__legal">
+          <h4>Information</h4>
+          <ul>
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li>Managed by Big House Holiday Lets</li>
+            <li>Quality in Tourism Gold Award</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Hope Mansell Hall. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky CTA -->
+  <a href="options.html" class="sticky-cta">
+    <span class="sticky-cta__hook">Like what you see?</span>
+    <span class="sticky-cta__action">View Your Quote &rarr;</span>
+  </a>
+
+  <script>
+    // Mobile Navigation
+    const navToggle = document.querySelector('.nav__toggle');
+    const navClose = document.querySelector('.nav__close');
+    const navMenu = document.querySelector('.nav__menu');
+
+    navToggle?.addEventListener('click', () => {
+      navMenu.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    });
+
+    navClose?.addEventListener('click', () => {
+      navMenu.classList.remove('active');
+      document.body.style.overflow = '';
+    });
+
+    document.querySelectorAll('.nav__link').forEach(link => {
+      link.addEventListener('click', () => {
+        navMenu.classList.remove('active');
+        document.body.style.overflow = '';
+      });
+    });
+
+    // Form handling (demo only)
+    document.getElementById('enquiryForm')?.addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for your enquiry! This is a demo form - in the live site, this would send your message to Hope Mansell Hall.');
+    });
+
+    // Set min date for date inputs
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('arrivalDate')?.setAttribute('min', today);
+    document.getElementById('departureDate')?.setAttribute('min', today);
+
+    // Update departure min date when arrival is selected
+    document.getElementById('arrivalDate')?.addEventListener('change', function() {
+      document.getElementById('departureDate').setAttribute('min', this.value);
+    });
+
+    // Fade-in animation
+    const fadeElements = document.querySelectorAll('.section');
+
+    const fadeObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05 });
+
+    fadeElements.forEach(element => {
+      const rect = element.getBoundingClientRect();
+      const isInViewport = rect.top < window.innerHeight && rect.bottom > 0;
+
+      if (isInViewport) {
+        element.classList.add('fade-in', 'visible');
+      } else {
+        element.classList.add('fade-in');
+        fadeObserver.observe(element);
+      }
+    });
+  </script>
+</body>
+</html>

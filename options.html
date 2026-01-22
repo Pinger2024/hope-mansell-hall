@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Your Website Concept | Hope Mansell Hall</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    /* ALL STYLES INLINE - Self-contained page */
+    :root {
+      --color-primary: #ba9b11;
+      --color-primary-dark: #9a8110;
+      --color-primary-light: #d1ae13;
+      --color-text: #333333;
+      --color-text-muted: #555555;
+      --color-white: #ffffff;
+      --color-off-white: #FAF8F5;
+      --color-warm: #F7F4EF;
+      --color-dark: #1a1a2e;
+      --font-display: 'Cormorant Garamond', Georgia, serif;
+      --font-body: 'DM Sans', -apple-system, sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: var(--font-body);
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--color-text);
+      background: var(--color-white);
+      -webkit-font-smoothing: antialiased;
+    }
+
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: inherit; text-decoration: none; }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* Header */
+    .options-header {
+      text-align: center;
+      padding: 80px 24px 60px;
+      background: var(--color-warm);
+    }
+
+    .intro-hook {
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-primary);
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 12px;
+    }
+
+    .options-header h1 {
+      font-family: var(--font-display);
+      font-size: clamp(36px, 6vw, 52px);
+      font-weight: 600;
+      line-height: 1.2;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 1.15rem;
+      color: var(--color-text-muted);
+    }
+
+    /* Section styling */
+    section {
+      padding: 80px 24px;
+    }
+
+    section h2 {
+      font-family: var(--font-display);
+      font-size: clamp(28px, 4vw, 36px);
+      font-weight: 600;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    /* Comparison section */
+    .comparison {
+      background: var(--color-white);
+    }
+
+    .comparison-grid {
+      display: grid;
+      gap: 32px;
+      max-width: 1000px;
+      margin: 0 auto 32px;
+    }
+
+    @media (min-width: 768px) {
+      .comparison-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    .before, .after {
+      position: relative;
+    }
+
+    .before img, .after img {
+      border-radius: 8px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+
+    .label {
+      position: absolute;
+      top: -12px;
+      left: 20px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .before .label {
+      background: #666;
+      color: white;
+    }
+
+    .after .label {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .comparison-links {
+      text-align: center;
+      display: flex;
+      gap: 24px;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .comparison-links a {
+      color: var(--color-primary);
+      font-weight: 500;
+      transition: opacity 0.2s;
+    }
+
+    .comparison-links a:hover {
+      opacity: 0.8;
+      text-decoration: underline;
+    }
+
+    /* Benefits section */
+    .benefits {
+      background: var(--color-off-white);
+    }
+
+    .benefits-intro {
+      text-align: center;
+      max-width: 700px;
+      margin: 0 auto 48px;
+      color: var(--color-text-muted);
+    }
+
+    .benefit-grid {
+      display: grid;
+      gap: 24px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 768px) {
+      .benefit-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    .benefit-card {
+      background: white;
+      padding: 28px;
+      border-radius: 8px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+    }
+
+    .benefit-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background: var(--color-primary);
+      border-radius: 50%;
+      color: white;
+      margin-bottom: 16px;
+    }
+
+    .benefit-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+
+    .before-stat, .after-stat {
+      font-size: 0.9rem;
+      margin-bottom: 4px;
+    }
+
+    .before-stat {
+      color: #888;
+      text-decoration: line-through;
+    }
+
+    .after-stat {
+      color: var(--color-primary);
+      font-weight: 600;
+    }
+
+    .benefit-note {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-top: 12px;
+    }
+
+    /* Approach section */
+    .approach {
+      background: var(--color-white);
+    }
+
+    .approach-content {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .approach-content .lead {
+      font-size: 1.1rem;
+      margin-bottom: 20px;
+    }
+
+    .approach-content p {
+      color: var(--color-text-muted);
+      margin-bottom: 16px;
+    }
+
+    /* Pricing section */
+    .pricing {
+      background: var(--color-off-white);
+    }
+
+    .pricing-intro {
+      text-align: center;
+      color: var(--color-text-muted);
+      margin-bottom: 40px;
+    }
+
+    .pricing-grid {
+      display: grid;
+      gap: 24px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 900px) {
+      .pricing-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    .pricing-card {
+      background: white;
+      padding: 32px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+      position: relative;
+    }
+
+    .pricing-card.recommended {
+      border: 2px solid var(--color-primary);
+      transform: scale(1.02);
+    }
+
+    @media (max-width: 899px) {
+      .pricing-card.recommended {
+        transform: none;
+      }
+    }
+
+    .recommended-badge {
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--color-primary);
+      color: white;
+      padding: 6px 20px;
+      border-radius: 20px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .pricing-card h3 {
+      font-family: var(--font-display);
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+
+    .price {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      font-weight: 600;
+      color: var(--color-primary);
+      margin-bottom: 4px;
+    }
+
+    .price-note {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      margin-bottom: 24px;
+    }
+
+    .price-includes {
+      list-style: none;
+      margin-bottom: 24px;
+    }
+
+    .price-includes li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      color: var(--color-text-muted);
+    }
+
+    .price-includes li svg {
+      flex-shrink: 0;
+      margin-top: 2px;
+      color: var(--color-primary);
+    }
+
+    .ideal-for {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+      padding-top: 20px;
+      border-top: 1px solid rgba(0,0,0,0.08);
+    }
+
+    /* After year one */
+    .after-year-one {
+      max-width: 700px;
+      margin: 48px auto 0;
+      padding: 32px;
+      background: white;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .after-year-one h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+    }
+
+    .after-year-one ul {
+      list-style: none;
+      text-align: left;
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .after-year-one ul li {
+      margin-bottom: 10px;
+      color: var(--color-text-muted);
+    }
+
+    /* Next steps section */
+    .next-steps {
+      background: var(--color-dark);
+      color: var(--color-white);
+      text-align: center;
+    }
+
+    .next-steps h2 {
+      color: var(--color-white);
+    }
+
+    .next-steps-intro {
+      max-width: 600px;
+      margin: 0 auto 32px;
+      color: rgba(255,255,255,0.85);
+    }
+
+    .contact-options {
+      margin-bottom: 24px;
+    }
+
+    .contact-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border-radius: 6px;
+      font-weight: 600;
+      font-size: 1rem;
+      transition: all 0.2s;
+    }
+
+    .contact-button.primary {
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .contact-button.primary:hover {
+      background: var(--color-primary-dark);
+      transform: translateY(-2px);
+    }
+
+    .response-note {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.7);
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid rgba(255,255,255,0.15);
+      margin: 48px auto;
+      max-width: 200px;
+    }
+
+    .not-interested {
+      max-width: 550px;
+      margin: 0 auto;
+    }
+
+    .not-interested h3 {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      margin-bottom: 16px;
+      color: var(--color-white);
+    }
+
+    .not-interested p {
+      color: rgba(255,255,255,0.75);
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      background: var(--color-dark);
+      color: rgba(255,255,255,0.6);
+      padding: 32px 24px;
+      text-align: center;
+      font-size: 0.9rem;
+      border-top: 1px solid rgba(255,255,255,0.1);
+    }
+
+    footer a {
+      color: var(--color-primary-light);
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- NO concept banner on this page -->
+  <!-- NO sticky CTA on this page -->
+  <!-- NO navigation to other demo pages -->
+
+  <header class="options-header">
+    <p class="intro-hook">We built this for you &mdash; here's how to make it yours</p>
+    <h1>Your Website Concept</h1>
+    <p class="subtitle">A fresh direction for Hope Mansell Hall</p>
+  </header>
+
+  <main>
+    <!-- Comparison Section -->
+    <section class="comparison">
+      <div class="container">
+        <h2>Before &amp; After</h2>
+
+        <div class="comparison-grid">
+          <div class="before">
+            <span class="label">Current BHHL Listing</span>
+            <img src="assets/screenshot-old.png" alt="Current Hope Mansell Hall page on BHHL">
+          </div>
+          <div class="after">
+            <span class="label">The Concept</span>
+            <img src="assets/screenshot-new.png" alt="New Hope Mansell Hall website concept">
+          </div>
+        </div>
+
+        <p class="comparison-links">
+          <a href="https://www.bhhl.co.uk/properties/hope-mansell-hall" target="_blank" rel="noopener">View current listing &rarr;</a>
+          <a href="index.html">Explore the concept &rarr;</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <div class="container">
+        <h2>What We Noticed</h2>
+
+        <p class="benefits-intro">
+          Hope Mansell Hall is your most premium property &mdash; &pound;4,250/week for 40 guests. It deserves to stand out.
+          Here's what the concept addresses:
+        </p>
+
+        <div class="benefit-grid">
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"/></svg>
+            </div>
+            <h3>Premium Positioning</h3>
+            <p class="before-stat">Current: Part of 16-property listing site</p>
+            <p class="after-stat">Concept: Dedicated luxury showcase</p>
+            <p class="benefit-note">Your flagship property deserves its own stage. A dedicated site positions Hope Mansell Hall as the premium experience it is.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>Key Differentiator</h3>
+            <p class="before-stat">18 ensuite buried in features list</p>
+            <p class="after-stat">Headline USP &mdash; impossible to miss</p>
+            <p class="benefit-note">18 ensuite bedrooms for 40 guests is genuinely rare. That's a headline, not a bullet point.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3>Emotional Storytelling</h3>
+            <p class="before-stat">Feature lists and facts</p>
+            <p class="after-stat">Celebration-focused narrative</p>
+            <p class="benefit-note">"Where 40 Become Family" &mdash; the concept positions Hope Mansell Hall as the setting for life's milestone moments.</p>
+          </div>
+
+          <div class="benefit-card">
+            <div class="benefit-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+            </div>
+            <h3>Search Visibility</h3>
+            <p class="before-stat">Competing with 15 other properties</p>
+            <p class="after-stat">Standalone site with targeted SEO</p>
+            <p class="benefit-note">A dedicated site can rank for "luxury large group accommodation Herefordshire" &mdash; your current listing can't.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Approach Section -->
+    <section class="approach">
+      <div class="container">
+        <h2>How This Works</h2>
+
+        <div class="approach-content">
+          <p class="lead">
+            <strong>This is a design concept</strong> &mdash; a starting point to show what's possible
+            for Hope Mansell Hall. We built it to spark a conversation, not to pressure you.
+          </p>
+
+          <p>
+            If you'd approached us as a web design agency looking for a custom site like this,
+            we'd typically quote <strong>&pound;1,750</strong> or more depending on complexity.
+          </p>
+
+          <p>
+            But the hard work is already done. The design exists. The pages are built.
+            So we can offer more accessible options to make this concept yours.
+          </p>
+
+          <p>
+            <strong>This is just the starting point.</strong> If you like the direction but want
+            changes &mdash; different colours, additional pages, integration with StayTech &mdash;
+            we'll work with you to get it exactly right.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="pricing">
+      <div class="container">
+        <h2>Your Options</h2>
+
+        <p class="pricing-intro">
+          Choose the option that works best for your situation:
+        </p>
+
+        <div class="pricing-grid">
+          <!-- Option 1: Design Files -->
+          <div class="pricing-card">
+            <h3>Design Files</h3>
+            <div class="price">&pound;495</div>
+            <p class="price-note">One-time payment</p>
+
+            <ul class="price-includes">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Full ownership of this design concept
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                All 7 pages as clean HTML/CSS files
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Optimised images and assets
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Free to modify and use as you wish
+              </li>
+            </ul>
+
+            <p class="ideal-for">
+              <strong>Ideal if:</strong> You have a developer or agency who can take these
+              files and implement them for you.
+            </p>
+          </div>
+
+          <!-- Option 2: One-Time Build (RECOMMENDED) -->
+          <div class="pricing-card recommended">
+            <span class="recommended-badge">Most Popular</span>
+            <h3>One-Time Build</h3>
+            <div class="price">&pound;995</div>
+            <p class="price-note">One-time payment</p>
+
+            <ul class="price-includes">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Everything in Design Files
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                We build it on your platform
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                StayTech integration or standalone site
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Your booking calendar stays intact
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                2 weeks of support after handover
+              </li>
+            </ul>
+
+            <p class="ideal-for">
+              <strong>Ideal if:</strong> You want to keep your existing setup (hosting, domain,
+              booking system) but with a fresh new look. We hand it over, you take it from there.
+            </p>
+          </div>
+
+          <!-- Option 3: Hands-Off Package -->
+          <div class="pricing-card">
+            <h3>Hands-Off Package</h3>
+            <div class="price">&pound;1,495</div>
+            <p class="price-note">Build + first year care included</p>
+
+            <ul class="price-includes">
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                <strong>The full build</strong> (same as One-Time Build)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                <strong>Plus 12 months hosting</strong> on our servers
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Security updates &amp; daily backups
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Content changes (30 mins/month)
+              </li>
+              <li>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>
+                Priority support
+              </li>
+            </ul>
+
+            <p style="font-size: 13px; color: var(--color-text-muted); margin-top: 16px; padding-top: 16px; border-top: 1px solid rgba(0,0,0,0.08);">
+              Breakdown: &pound;995 build + &pound;500 first year care
+            </p>
+
+            <p class="ideal-for">
+              <strong>Ideal if:</strong> You want us to handle everything &mdash; build it, host it, keep it
+              running. No tech headaches for you.
+            </p>
+          </div>
+        </div>
+
+        <!-- After Year One -->
+        <div class="after-year-one">
+          <h3>After Year One</h3>
+          <p style="color: var(--color-text-muted); margin-bottom: 16px;">
+            If you choose the Hands-Off Package, after the first year you can:
+          </p>
+          <ul>
+            <li><strong>Continue with us</strong> at &pound;350/year for ongoing hosting &amp; support</li>
+            <li><strong>Take the site</strong> &mdash; we'll hand over all files and help you move to your own hosting</li>
+            <li><strong>Walk away</strong> &mdash; no hard feelings, no lock-in</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Next Steps Section -->
+    <section class="next-steps">
+      <div class="container">
+        <h2>Interested?</h2>
+
+        <p class="next-steps-intro">
+          If you'd like to explore any of these options &mdash; or if you just have questions &mdash;
+          I'd be happy to have a quick chat. No pressure, no hard sell.
+        </p>
+
+        <div class="contact-options">
+          <a href="mailto:michael@prometheus-it.com?subject=Website%20concept%20-%20Hope%20Mansell%20Hall" class="contact-button primary">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+            Send me an email
+          </a>
+        </div>
+
+        <p class="response-note">
+          I typically respond within a few hours during business days.
+        </p>
+
+        <hr class="divider">
+
+        <div class="not-interested">
+          <h3>Not for you?</h3>
+          <p>
+            No worries at all. I know you didn't ask for this, and I appreciate you taking the
+            time to look. If your situation changes in the future, the offer stands &mdash; just drop
+            me a line.
+          </p>
+          <p>
+            This demo will be removed in 14 days to keep things tidy.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Concept created by Prometheus IT &middot; <a href="https://prometheus-it.com">prometheus-it.com</a></p>
+  </footer>
+</body>
+</html>

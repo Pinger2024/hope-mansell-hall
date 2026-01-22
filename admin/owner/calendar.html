@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Calendar | Forest House Owner Portal</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="owner-styles.css">
+</head>
+<body>
+  <!-- Demo Banner -->
+  <div class="demo-banner">
+    <strong>Owner Portal Mockup</strong> — Owners can view bookings and block dates for personal use.
+    <a href="../../options.html">View Full Proposal →</a>
+  </div>
+
+  <div class="admin-layout">
+    <!-- Sidebar - Owner View -->
+    <aside class="sidebar sidebar--owner">
+      <div class="sidebar__header">
+        <a href="index.html" class="sidebar__logo">
+          <span class="sidebar__logo-icon">FH</span>
+          Owner Portal
+        </a>
+      </div>
+
+      <nav class="sidebar__nav">
+        <div class="nav-section">
+          <div class="nav-section__title">My Property</div>
+          <a href="index.html" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="7" height="7" rx="1"/>
+              <rect x="14" y="3" width="7" height="7" rx="1"/>
+              <rect x="3" y="14" width="7" height="7" rx="1"/>
+              <rect x="14" y="14" width="7" height="7" rx="1"/>
+            </svg>
+            Dashboard
+          </a>
+          <a href="calendar.html" class="nav-link nav-link--active">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+              <line x1="16" y1="2" x2="16" y2="6"/>
+              <line x1="8" y1="2" x2="8" y2="6"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+            </svg>
+            Calendar & Bookings
+          </a>
+          <a href="statements.html" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+            Statements
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <div class="nav-section__title">Performance</div>
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <line x1="18" y1="20" x2="18" y2="10"/>
+              <line x1="12" y1="20" x2="12" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="14"/>
+            </svg>
+            Analytics
+          </a>
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+            </svg>
+            Reviews
+            <span class="nav-link__badge">4.9</span>
+          </a>
+        </div>
+
+        <div class="nav-section">
+          <div class="nav-section__title">Account</div>
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            Messages
+            <span class="nav-link__badge">2</span>
+          </a>
+          <a href="#" class="nav-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="3"/>
+              <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+            </svg>
+            Settings
+          </a>
+        </div>
+      </nav>
+
+      <div class="sidebar__footer">
+        <div class="sidebar__user">
+          <div class="sidebar__avatar" style="background: #2d5a3d;">BS</div>
+          <div class="sidebar__user-info">
+            <div class="sidebar__user-name">Barbara & Simon</div>
+            <div class="sidebar__user-role">Property Owner</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <header class="top-header">
+        <div>
+          <p class="page-subtitle">Forest House</p>
+          <h1 class="page-title">Calendar & Bookings</h1>
+        </div>
+        <div class="header-actions">
+          <button class="btn btn--secondary" id="blockDatesBtn">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+              <line x1="9" y1="9" x2="15" y2="15"/>
+              <line x1="15" y1="9" x2="9" y2="15"/>
+            </svg>
+            Block Dates
+          </button>
+        </div>
+      </header>
+
+      <div class="page-content">
+        <!-- Calendar Legend & Controls -->
+        <div class="calendar-controls">
+          <div class="calendar-nav">
+            <button class="calendar-nav__btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="15 18 9 12 15 6"/>
+              </svg>
+            </button>
+            <span class="calendar-nav__month">January - February 2026</span>
+            <button class="calendar-nav__btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polyline points="9 18 15 12 9 6"/>
+              </svg>
+            </button>
+          </div>
+          <div class="calendar-legend">
+            <span class="legend-item">
+              <span class="legend-item__dot legend-item__dot--booked"></span>
+              Guest Booking
+            </span>
+            <span class="legend-item">
+              <span class="legend-item__dot legend-item__dot--blocked"></span>
+              Owner Blocked
+            </span>
+            <span class="legend-item">
+              <span class="legend-item__dot legend-item__dot--available"></span>
+              Available
+            </span>
+          </div>
+        </div>
+
+        <!-- Two Month Calendar View -->
+        <div class="calendar-months">
+          <!-- January 2026 -->
+          <div class="calendar-month card">
+            <div class="calendar-month__header">
+              <h3>January 2026</h3>
+            </div>
+            <div class="calendar-month__body">
+              <div class="calendar-weekdays">
+                <span class="calendar-weekday">Mon</span>
+                <span class="calendar-weekday">Tue</span>
+                <span class="calendar-weekday">Wed</span>
+                <span class="calendar-weekday">Thu</span>
+                <span class="calendar-weekday">Fri</span>
+                <span class="calendar-weekday">Sat</span>
+                <span class="calendar-weekday">Sun</span>
+              </div>
+              <div class="calendar-days">
+                <!-- Week 1 -->
+                <span class="calendar-day calendar-day--other-month">29</span>
+                <span class="calendar-day calendar-day--other-month">30</span>
+                <span class="calendar-day calendar-day--other-month">31</span>
+                <span class="calendar-day">1</span>
+                <span class="calendar-day">2</span>
+                <span class="calendar-day">3</span>
+                <span class="calendar-day">4</span>
+                <!-- Week 2 -->
+                <span class="calendar-day">5</span>
+                <span class="calendar-day">6</span>
+                <span class="calendar-day">7</span>
+                <span class="calendar-day">8</span>
+                <span class="calendar-day">9</span>
+                <span class="calendar-day">10</span>
+                <span class="calendar-day">11</span>
+                <!-- Week 3 - Current booking -->
+                <span class="calendar-day">12</span>
+                <span class="calendar-day">13</span>
+                <span class="calendar-day">14</span>
+                <span class="calendar-day">15</span>
+                <span class="calendar-day">16</span>
+                <span class="calendar-day calendar-day--booked calendar-day--start" title="James Thompson - Corporate retreat">17</span>
+                <span class="calendar-day calendar-day--booked calendar-day--middle calendar-day--today" title="James Thompson">18</span>
+                <!-- Week 4 -->
+                <span class="calendar-day calendar-day--booked calendar-day--middle" title="James Thompson">19</span>
+                <span class="calendar-day calendar-day--booked calendar-day--end" title="James Thompson - Check out">20</span>
+                <span class="calendar-day">21</span>
+                <span class="calendar-day">22</span>
+                <span class="calendar-day">23</span>
+                <span class="calendar-day calendar-day--booked calendar-day--start" title="Sarah Williams - Wedding party">24</span>
+                <span class="calendar-day calendar-day--booked calendar-day--middle" title="Sarah Williams">25</span>
+                <!-- Week 5 -->
+                <span class="calendar-day calendar-day--booked calendar-day--middle" title="Sarah Williams">26</span>
+                <span class="calendar-day calendar-day--booked calendar-day--end" title="Sarah Williams - Check out">27</span>
+                <span class="calendar-day">28</span>
+                <span class="calendar-day">29</span>
+                <span class="calendar-day">30</span>
+                <span class="calendar-day">31</span>
+                <span class="calendar-day calendar-day--other-month">1</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- February 2026 -->
+          <div class="calendar-month card">
+            <div class="calendar-month__header">
+              <h3>February 2026</h3>
+            </div>
+            <div class="calendar-month__body">
+              <div class="calendar-weekdays">
+                <span class="calendar-weekday">Mon</span>
+                <span class="calendar-weekday">Tue</span>
+                <span class="calendar-weekday">Wed</span>
+                <span class="calendar-weekday">Thu</span>
+                <span class="calendar-weekday">Fri</span>
+                <span class="calendar-weekday">Sat</span>
+                <span class="calendar-weekday">Sun</span>
+              </div>
+              <div class="calendar-days">
+                <!-- Week 1 -->
+                <span class="calendar-day calendar-day--other-month">26</span>
+                <span class="calendar-day calendar-day--other-month">27</span>
+                <span class="calendar-day calendar-day--other-month">28</span>
+                <span class="calendar-day calendar-day--other-month">29</span>
+                <span class="calendar-day calendar-day--other-month">30</span>
+                <span class="calendar-day calendar-day--other-month">31</span>
+                <span class="calendar-day calendar-day--booked calendar-day--start" title="Michael Johnson - Family reunion">1</span>
+                <!-- Week 2 -->
+                <span class="calendar-day calendar-day--booked calendar-day--middle" title="Michael Johnson">2</span>
+                <span class="calendar-day calendar-day--booked calendar-day--middle" title="Michael Johnson">3</span>
+                <span class="calendar-day calendar-day--booked calendar-day--end" title="Michael Johnson - Check out">4</span>
+                <span class="calendar-day">5</span>
+                <span class="calendar-day">6</span>
+                <span class="calendar-day">7</span>
+                <span class="calendar-day">8</span>
+                <!-- Week 3 -->
+                <span class="calendar-day">9</span>
+                <span class="calendar-day">10</span>
+                <span class="calendar-day">11</span>
+                <span class="calendar-day">12</span>
+                <span class="calendar-day">13</span>
+                <span class="calendar-day calendar-day--booked calendar-day--start" title="Emma Harrison - Birthday celebration">14</span>
+                <span class="calendar-day calendar-day--booked calendar-day--end" title="Emma Harrison - Check out">15</span>
+                <!-- Week 4 -->
+                <span class="calendar-day">16</span>
+                <span class="calendar-day">17</span>
+                <span class="calendar-day">18</span>
+                <span class="calendar-day">19</span>
+                <span class="calendar-day calendar-day--blocked calendar-day--start" title="Owner blocked - Half term visit">20</span>
+                <span class="calendar-day calendar-day--blocked calendar-day--middle" title="Owner blocked">21</span>
+                <span class="calendar-day calendar-day--blocked calendar-day--middle" title="Owner blocked">22</span>
+                <!-- Week 5 -->
+                <span class="calendar-day calendar-day--blocked calendar-day--middle" title="Owner blocked">23</span>
+                <span class="calendar-day calendar-day--blocked calendar-day--middle" title="Owner blocked">24</span>
+                <span class="calendar-day calendar-day--blocked calendar-day--middle" title="Owner blocked">25</span>
+                <span class="calendar-day calendar-day--blocked calendar-day--middle" title="Owner blocked">26</span>
+                <span class="calendar-day calendar-day--blocked calendar-day--end" title="Owner blocked - End">27</span>
+                <span class="calendar-day">28</span>
+                <span class="calendar-day calendar-day--other-month">1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bookings List -->
+        <div class="card" style="margin-top: 32px;">
+          <div class="card__header">
+            <h2 class="card__title">Upcoming Bookings</h2>
+            <span class="badge" style="background: rgba(186, 155, 17, 0.1); color: var(--color-primary);">4 bookings</span>
+          </div>
+          <div class="card__body" style="padding: 0;">
+            <div class="booking-list">
+              <!-- Current Booking -->
+              <div class="booking-item booking-item--current">
+                <div class="booking-item__status">
+                  <span class="booking-item__status-dot booking-item__status-dot--current"></span>
+                  In Property Now
+                </div>
+                <div class="booking-item__main">
+                  <div class="booking-item__guest">
+                    <div class="booking-item__avatar">JT</div>
+                    <div>
+                      <h4>James Thompson</h4>
+                      <p>Corporate retreat · 18 guests</p>
+                    </div>
+                  </div>
+                  <div class="booking-item__dates">
+                    <div class="booking-item__date">
+                      <span class="booking-item__date-label">Check In</span>
+                      <span class="booking-item__date-value">Fri, Jan 17</span>
+                    </div>
+                    <div class="booking-item__arrow">→</div>
+                    <div class="booking-item__date">
+                      <span class="booking-item__date-label">Check Out</span>
+                      <span class="booking-item__date-value">Mon, Jan 20</span>
+                    </div>
+                  </div>
+                  <div class="booking-item__revenue">
+                    <span class="booking-item__revenue-label">Revenue</span>
+                    <span class="booking-item__revenue-value">£4,125</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Upcoming Bookings -->
+              <div class="booking-item">
+                <div class="booking-item__status">
+                  <span class="booking-item__status-dot booking-item__status-dot--upcoming"></span>
+                  In 6 days
+                </div>
+                <div class="booking-item__main">
+                  <div class="booking-item__guest">
+                    <div class="booking-item__avatar">SW</div>
+                    <div>
+                      <h4>Sarah Williams</h4>
+                      <p>Wedding party · 24 guests</p>
+                    </div>
+                  </div>
+                  <div class="booking-item__dates">
+                    <div class="booking-item__date">
+                      <span class="booking-item__date-label">Check In</span>
+                      <span class="booking-item__date-value">Fri, Jan 24</span>
+                    </div>
+                    <div class="booking-item__arrow">→</div>
+                    <div class="booking-item__date">
+                      <span class="booking-item__date-label">Check Out</span>
+                      <span class="booking-item__date-value">Mon, Jan 27</span>
+                    </div>
+                  </div>
+                  <div class="booking-item__revenue">
+                    <span class="booking-item__revenue-label">Revenue</span>
+                    <span class="booking-item__revenue-value">£4,325</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-item">
+                <div class="booking-item__status">
+                  <span class="booking-item__status-dot booking-item__status-dot--upcoming"></span>
+                  In 14 days
+                </div>
+                <div class="booking-item__main">
+                  <div class="booking-item__guest">
+                    <div class="booking-item__avatar">MJ</div>
+                    <div>
+                      <h4>Michael Johnson</h4>
+                      <p>Family reunion · 22 guests</p>
+                    </div>
+                  </div>
+                  <div class="booking-item__dates">
+                    <div class="booking-item__date">
+                      <span class="booking-item__date-label">Check In</span>
+                      <span class="booking-item__date-value">Sun, Feb 1</span>
+                    </div>
+                    <div class="booking-item__arrow">→</div>
+                    <div class="booking-item__date">
+                      <span class="booking-item__date-label">Check Out</span>
+                      <span class="booking-item__date-value">Wed, Feb 4</span>
+                    </div>
+                  </div>
+                  <div class="booking-item__revenue">
+                    <span class="booking-item__revenue-label">Revenue</span>
+                    <span class="booking-item__revenue-value">£4,200</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="booking-item">
+                <div class="booking-item__status">
+                  <span class="booking-item__status-dot booking-item__status-dot--enquiry"></span>
+                  Enquiry
+                </div>
+                <div class="booking-item__main">
+                  <div class="booking-item__guest">
+                    <div class="booking-item__avatar">EH</div>
+                    <div>
+                      <h4>Emma Harrison</h4>
+                      <p>Birthday celebration · 20 guests</p>
+                    </div>
+                  </div>
+                  <div class="booking-item__dates">
+                    <div class="booking-item__date">
+                      <span class="booking-item__date-label">Check In</span>
+                      <span class="booking-item__date-value">Sat, Feb 14</span>
+                    </div>
+                    <div class="booking-item__arrow">→</div>
+                    <div class="booking-item__date">
+                      <span class="booking-item__date-label">Check Out</span>
+                      <span class="booking-item__date-value">Sun, Feb 15</span>
+                    </div>
+                  </div>
+                  <div class="booking-item__revenue">
+                    <span class="booking-item__revenue-label">Potential</span>
+                    <span class="booking-item__revenue-value">£2,950</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Owner Blocked Dates -->
+        <div class="card" style="margin-top: 32px;">
+          <div class="card__header">
+            <h2 class="card__title">Your Blocked Dates</h2>
+            <button class="btn btn--secondary btn--small">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+              Add Block
+            </button>
+          </div>
+          <div class="card__body" style="padding: 0;">
+            <div class="blocked-list">
+              <div class="blocked-item">
+                <div class="blocked-item__icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                    <line x1="9" y1="9" x2="15" y2="15"/>
+                    <line x1="15" y1="9" x2="9" y2="15"/>
+                  </svg>
+                </div>
+                <div class="blocked-item__info">
+                  <h4>Half Term Family Visit</h4>
+                  <p>Fri, Feb 20 – Fri, Feb 27, 2026 · 7 nights</p>
+                </div>
+                <div class="blocked-item__actions">
+                  <button class="btn btn--secondary btn--small">Edit</button>
+                  <button class="btn btn--secondary btn--small" style="color: var(--color-danger);">Remove</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card__footer">
+            <p class="text-muted" style="margin: 0; font-size: 0.85rem;">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="vertical-align: middle; margin-right: 4px;">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="12" y1="16" x2="12" y2="12"/>
+                <line x1="12" y1="8" x2="12.01" y2="8"/>
+              </svg>
+              Blocked dates will not receive booking enquiries. You can cancel a block at any time before a guest books.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <style>
+    .calendar-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 24px;
+    }
+
+    .calendar-legend {
+      display: flex;
+      gap: 24px;
+    }
+
+    .legend-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .legend-item__dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 4px;
+    }
+
+    .legend-item__dot--booked {
+      background: var(--color-primary);
+    }
+
+    .legend-item__dot--blocked {
+      background: #9ca3af;
+    }
+
+    .legend-item__dot--available {
+      background: #dcfce7;
+      border: 1px solid #86efac;
+    }
+
+    .calendar-months {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+
+    .calendar-month__header {
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .calendar-month__header h3 {
+      font-family: var(--font-display);
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .calendar-month__body {
+      padding: 16px;
+    }
+
+    .calendar-weekdays {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      margin-bottom: 8px;
+    }
+
+    .calendar-weekday {
+      text-align: center;
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+      padding: 8px 4px;
+    }
+
+    .calendar-days {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 2px;
+    }
+
+    .calendar-day {
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      transition: all 0.15s;
+      position: relative;
+    }
+
+    .calendar-day:hover:not(.calendar-day--booked):not(.calendar-day--blocked) {
+      background: var(--color-off-white);
+    }
+
+    .calendar-day--other-month {
+      color: #d1d5db;
+    }
+
+    .calendar-day--today {
+      font-weight: 700;
+      box-shadow: inset 0 0 0 2px var(--color-primary);
+    }
+
+    .calendar-day--booked {
+      background: var(--color-primary);
+      color: white;
+      border-radius: 0;
+    }
+
+    .calendar-day--booked.calendar-day--today {
+      box-shadow: inset 0 0 0 2px white;
+    }
+
+    .calendar-day--blocked {
+      background: #e5e7eb;
+      color: #6b7280;
+      border-radius: 0;
+    }
+
+    .calendar-day--start {
+      border-radius: 6px 0 0 6px;
+    }
+
+    .calendar-day--end {
+      border-radius: 0 6px 6px 0;
+    }
+
+    /* Booking List */
+    .booking-list {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .booking-item {
+      padding: 20px 24px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .booking-item:last-child {
+      border-bottom: none;
+    }
+
+    .booking-item--current {
+      background: rgba(45, 90, 61, 0.03);
+    }
+
+    .booking-item__status {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      margin-bottom: 12px;
+    }
+
+    .booking-item__status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+    }
+
+    .booking-item__status-dot--current {
+      background: #2d5a3d;
+      animation: pulse 2s infinite;
+    }
+
+    .booking-item__status-dot--upcoming {
+      background: var(--color-primary);
+    }
+
+    .booking-item__status-dot--enquiry {
+      background: var(--color-info);
+    }
+
+    .booking-item__main {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+    }
+
+    .booking-item__guest {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      min-width: 200px;
+    }
+
+    .booking-item__avatar {
+      width: 44px;
+      height: 44px;
+      background: var(--color-primary);
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 600;
+    }
+
+    .booking-item__guest h4 {
+      font-size: 1rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .booking-item__guest p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .booking-item__dates {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      flex: 1;
+    }
+
+    .booking-item__date {
+      text-align: center;
+    }
+
+    .booking-item__date-label {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+      margin-bottom: 4px;
+    }
+
+    .booking-item__date-value {
+      font-weight: 500;
+    }
+
+    .booking-item__arrow {
+      color: var(--color-text-muted);
+    }
+
+    .booking-item__revenue {
+      text-align: right;
+      min-width: 100px;
+    }
+
+    .booking-item__revenue-label {
+      display: block;
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--color-text-muted);
+      margin-bottom: 4px;
+    }
+
+    .booking-item__revenue-value {
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #2d5a3d;
+    }
+
+    /* Blocked List */
+    .blocked-list {
+      padding: 0;
+    }
+
+    .blocked-item {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      padding: 16px 24px;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .blocked-item:last-child {
+      border-bottom: none;
+    }
+
+    .blocked-item__icon {
+      width: 40px;
+      height: 40px;
+      background: #f3f4f6;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blocked-item__icon svg {
+      width: 20px;
+      height: 20px;
+      color: #6b7280;
+    }
+
+    .blocked-item__info {
+      flex: 1;
+    }
+
+    .blocked-item__info h4 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 2px;
+    }
+
+    .blocked-item__info p {
+      font-size: 0.85rem;
+      color: var(--color-text-muted);
+    }
+
+    .blocked-item__actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    @media (max-width: 1200px) {
+      .calendar-months {
+        grid-template-columns: 1fr;
+      }
+
+      .booking-item__main {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .booking-item__guest {
+        min-width: 100%;
+      }
+    }
+  </style>
+</body>
+</html>
